@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169300214-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169300214-1');
+
+    </script>
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/layout.css">
+    <!--自作CSS -->
+    <style type="text/css">
+        /*ここに調整CSS記述*/
+        .jumbotron {
+            background: url(../static/images/background.png) center no-repeat;
+            /*            background-size: contain;*/
+            background-size: contain;
+        }
+
+    </style>
+    <title>
+        きょう、ていの良い予想は当たるだろうか？
+    </title>
+    <meta name="description" content="こちらは競艇の３連単を予想する、おしゃれなサイトです。本日の予想と昨日の結果を確認できます。ボートレースに機械学習を適用してみた、体の良いサイトです。ボートレース初心者の方におすすめです。">
+    <meta http-equiv="content-type" charset="utf-8">
+    <meta name="keywords" content="競艇,ボートレース,機械学習,初心者,おしゃれ" />
+    <link rel="shortcut icon" href="../static/images/favicon_1.ico">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light mt-0 mb-1">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">DoYouHaveNiceBoat?</a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" target=”_blank” href="https://twitter.com/df_ngo">Twitter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target=”_blank” href="https://qiita.com/NGOhiroshi/items/7bcbf01df7c32c93d655">Qiita</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target=”_blank” href="/tshirts">UTme!(オリジナルグッズ)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target=”_blank” href="https://qiita.com/NGOhiroshi/items/893139b8c711134ff234">和寿メーター</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/thissite">このサイトについて</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/disclaimer">利用規約</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron pt-3">
+
+
+        {% block content %}{% endblock %}
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

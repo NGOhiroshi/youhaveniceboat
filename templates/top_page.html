@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Form
+  ================================================== -->
+<form method="POST">
+    <div class="form-row justify-content-end mt-0">
+        <div class="col-5">
+            <input class="form-control form-control-sm" name="kazutoshi" type="text" placeholder="きょう、あなたのきもちを、Mr.childrenの歌詞で翻訳すると..?">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-outline-dark btn-sm">和寿メーター</button>
+        </div>
+    </div>
+</form>
+
+<p class="text-sm-right">
+    {{lyrics}}<br>
+    {{title}}
+</p>
+
+
+
+<div class="h-25"></div>
+
+<div class="container">
+
+    <div class=" display-4">
+        <center>
+            きょう、ていの良い<br>
+            予想はあたるだろうか。
+        </center>
+    </div>
+    <center>
+        <br>
+        競艇の３連単を予測しているサイトです。<br><br>
+
+
+    </center>
+    <br><br>
+
+    <div class="row justify-content-center">
+        <div class="col text-center">
+            <a class="btn btn-outline-dark" href="/prediction" role="button">ていの良い予想はこちら »</a>
+            <a class="btn btn-outline-dark" href="/result" role="button">過去は未来へ進むためにある »</a>
+            <br><br>
+            <!--
+            ↓競艇とは無関係のコーナー
+            <br><br>
+            <form action="/confirm" method="POST">
+                <p><input type="text" name="Name" /></p>
+                <p><input type="submit" value="さくらいさんに聞いてみよう" /></p>
+            </form>
+-->
+
+        </div>
+    </div>
+</div>
+<!--<div class="h-25"></div>-->
+
+
+<!--<div class="container">-->
+
+<!--</div>-->
+
+{% endblock %}

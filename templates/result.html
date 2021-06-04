@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Form
+  ================================================== -->
+
+<div class="container">
+    <div>
+        <h3>
+            <center>
+                {{yday}} の<br>予測に対する結果はいかに..。<br>
+            </center>
+        </h3>
+    </div>
+    <br><br>
+    <table class="table">
+        <h6>
+            <tr>
+                <th>
+                    <h4>
+                        ・的中率：{{hit_ratio}} %<br>
+                    </h4>
+                    <br>
+                    総評：{{msg}}<br>
+                    予測数：{{pred_num}}<br>
+                    的中数：{{hit_num}}<br>
+                    <br>
+                </th>
+                <th>
+                    <h4>
+                        ・回収率：{{pay_return}} %<br>
+                    </h4>
+                    <br>
+                    総評：{{msg2}}<br>
+                    購入金額：{{pay}} yen<br>
+                    払戻金：{{getmoney}} yen<br>
+                    <br>
+                </th>
+            </tr>
+        </h6>
+    </table>
+</div>
+
+
+<table class="table table-hover">
+    <thead align="left">
+        <tr>
+            {% for i in header: %}
+            <th scope="col">{{ i }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+
+    <tbody class="table table-borderless" align="left">
+        {% for i in record: %}
+        <tr>
+            {% for j in i: %}
+            <td>{{ j }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+
+
+{% endblock %}
