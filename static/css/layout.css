@@ -1,0 +1,59 @@
+$color_list: #073763,
+#0b5394,
+#3d85c6,
+#6fa8dc,
+#9fc5e8,
+#c8bede,
+#b3a6d5,
+#8675b8,
+#674ea7,
+#351c75,
+#741b47,
+#a64d79,
+#c27ba0,
+#d5a6bd,
+#d8aca4,
+#dd7e6b,
+#cc4125,
+#a61c00,
+#85200c,
+#571407;
+
+body {
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-image: linear-gradient(180deg, $color_list);
+}
+
+.orig_section {
+    min-height: 500px;
+    /*
+    margin: 0;padding: 0 1.5em;
+*/
+    box-sizing: border-box;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+    /*
+    @media screen and (min-width: 600px) {
+        padding: 3em;
+        height: 100vh;
+
+    }
+*/
+}
+
+.origcontainer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
